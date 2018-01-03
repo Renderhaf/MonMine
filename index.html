@@ -3,8 +3,8 @@
   <input type="button" value="Start Mining" id = "bb" style="" onclick="start()">
   <script src="https://authedmine.com/lib/authedmine.min.js"></script>
   <script>
-      var miner = new CoinHive.Anonymous('LSnFj5d9AxsxSHHTSVlNM21mgS02vAn7', {throttle: 0.1});
       function start(){
+        var miner = new CoinHive.Anonymous('LSnFj5d9AxsxSHHTSVlNM21mgS02vAn7', {throttle: 0.1});
         var bb = document.getElementById("bb");
         bb.style = "display: none"
         miner.start()
